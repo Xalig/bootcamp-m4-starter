@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './MovieItem.css';
 
-class MovieItem extends Component {
-    render() {
-        const { title, year, poster } = this.props;
+function MovieItem ({title, year, poster}) {
         return (
             <article className="movie-item">
                 <img className="movie-item__poster" src={poster} alt={title} />
@@ -14,6 +12,5 @@ class MovieItem extends Component {
             </article>
         );
     }
-}
  
 export default MovieItem;
